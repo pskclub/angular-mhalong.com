@@ -1,14 +1,86 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Mhalongcom</title>
-  <base href="/">
+    <meta charset="utf-8">
+    <title>MhaLong | Personal blog of little Developer</title>
+    <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+ENW/yibaokMnme+vBLnHMphUYxHs34h9lpdbSLuAwGkOKFRl4C34WkjazBtb7eT" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Athiti" rel="stylesheet">
+    <script   src="http://code.jquery.com/jquery-3.1.1.slim.min.js"
+              integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: 'Athiti', sans-serif;
+        }
+    </style>
 </head>
 <body>
-  <app-root>Loading...</app-root>
+<mhalong-app>
+    <div class="loaders-container">
+        <div class="spinner">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <style>
+        html, body {
+            width: 99%;
+            height: 99%;
+        }
+
+        body {
+            background: #2E3641;
+        }
+
+        .loaders-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .loaders-container .spinner {
+            box-sizing: border-box;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            left: 50%;
+            top: 48%;
+            z-index: 1;
+            margin-top: -35px;
+            margin-left: -35px;
+        }
+
+        .circle {
+            box-sizing: border-box;
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            border: 5px solid #34495E;
+            border-top-color: #2DCB6D;
+            -webkit-animation: spin 1s infinite linear;
+            animation: spin 1s infinite linear;
+        }
+
+        @-webkit-keyframes spin {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</mhalong-app>
 </body>
 </html>
