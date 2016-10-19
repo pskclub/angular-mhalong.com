@@ -1,12 +1,10 @@
 import {Component, OnInit} from "@angular/core";
-import {NavbarComponent} from "../navbar/navbar.component";
 import {Title} from "@angular/platform-browser";
 
 @Component({
     selector: 'app-home',
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.css'],
-    directives: NavbarComponent
 })
 export class HomeComponent implements OnInit {
 
