@@ -1,0 +1,33 @@
+<script src="/assets/js/nav.js"></script>
+<div id="top" class="container hidden-xs" style="padding-top: 51px">
+    <a href="/"><img src="/assets/mhalong_logo_light_sm.png" style="float: left;"/></a>
+    <div class="nav-extra hidden-xs">
+        <a class="hireme button-mywall" routerLink="/" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">HOME</a>
+        <a class="hireme button-mywall" href="https://blog.mhalong.com">BLOG</a>
+        <a class="hireme button-mywall" routerLink="/about" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">ABOUT ME</a>
+    </div>
+</div>
+<nav class="navbar navbar-default visible-xs">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <img src="/assets/mhalong_logo_light_sm.png" style="max-height: 100%"
+                     alt="MhaLong | Personal Web of little Developer">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a routerLink="/">HOME</a></li>
+                <li><a href="https://blog.mhalong.com">BLOG</a></li>
+                <li><a routerLink="/about">ABOUT ME</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
