@@ -12,9 +12,7 @@ a:focus {
     padding: 5px 30px
 }
 
-
 .nav-extra {
-    float: right;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -24,7 +22,7 @@ a:focus {
 .button-mywall {
     background: #EC0856;
     color: #FFF;
-    border-radius: 50px;
+    border-radius: 30px;
     font-weight: 400;
     font-size: 22px;
     padding-right: 25px;
@@ -47,8 +45,6 @@ a:focus {
     color: #FFF
 }
 
-
-
 .button-mywall {
     background: rgba(236, 8, 86, 0);
     /*border: 2px solid #2ECC6E;*/
@@ -65,5 +61,62 @@ a:focus {
     background: #2ECC6E;
     border-color: #2ECC6E;
 }
+
+nav > a > img.logo {
+    max-width: 100%;
+}
+
+/*for mobile*/
+@media (max-width: 768px) {
+    nav {
+        padding-top: 20px;
+        padding-bottom: 10px
+    }
+
+    nav > a > img.logo {
+        margin-bottom: 15px
+    }
+
+    .nav-extra {
+        width: 100%;
+
+        /* Firefox */
+        display: -moz-box;
+        -moz-box-pack: center;
+        -moz-box-align: center;
+
+        /* Safari and Chrome */
+        display: -webkit-box;
+        -webkit-box-pack: center;
+        -webkit-box-align: center;
+
+        /* W3C */
+        display: box;
+        box-pack: center;
+        box-align: center;
+    }
+
+    .button-mywall {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+/*for desktop*/
+@media (min-width: 768px) {
+    nav {
+        padding-top: 51px;
+        padding-bottom: 41px;
+    }
+
+    nav > a > img.logo {
+        float: left;
+    }
+
+    .nav-extra {
+        float: right;
+    }
+}
+
 
 
